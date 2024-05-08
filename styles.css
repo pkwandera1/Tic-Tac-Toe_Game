@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    width: 335px;
+    padding: 5px;
+    border: 1px solid blueviolet;
+}
+
+.gameBoard > button {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    background-color: blueviolet;
+    margin-top: 10px;
+    width: 60px;
+    height: 25px;
+}
+
+#reset:hover, button:hover {
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 10px;
+    color: rgb(243, 9, 192);
+    font-size: 28px;
+    font-family: cursive;
+}
+
+h2 {
+    color: white;
+    font-size: 18px;
+}
+
+legend {
+    text-align: center;
+}
+
+.gameBoard > button {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.game-mode > h2 {
+    color: blueviolet;
+}
+
+.game-mode {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.reset {
+    color: white;
+}
